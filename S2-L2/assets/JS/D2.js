@@ -190,18 +190,20 @@ console.log(me);
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-me.skills[2] = 0;
-console.log(me);
+delete me.skills[2];
+console.log(me.skills[2]);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const array = [];
-
+let array = [];
+array = [1,2,3,4,5,6,7,8,9,10];
+console.log(array);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */ 
+array[9] = 100;
+console.log(array);
